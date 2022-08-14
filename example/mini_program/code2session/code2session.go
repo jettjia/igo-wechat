@@ -16,7 +16,7 @@ func main() {
 		IsDebugLog: true,
 	}
 	client := v1.NewMiniClientWithAuth(conf, consts.CAuthToken)
-	rsp := client.Code2Session("071ovw000ZNbiO19hu3005steJ2ovw0c")
+	rsp := client.Code2Session("071D0m0w3KnHYY2MLD2w3tdFc10D0m0W")
 
 	fmt.Println("auth: ", util.PrintJson(rsp))
 }

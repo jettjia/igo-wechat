@@ -1,5 +1,4 @@
-// Package mini_program 小程序
-package mini_program
+package qy_api
 
 type Config struct {
 	AppID      string

@@ -10,19 +10,19 @@ type SendUniformMessageRsp struct {
 }
 
 type WeappTemplateMsg struct {
-	TemplateId      int    `json:"template_id"`      // 小程序模板ID
-	Page            string `json:"page"`             // 小程序页面路径
-	FormId          int    `json:"form_id"`          // 小程序模板消息formid
-	EmphasisKeyword string `json:"emphasis_keyword"` // 小程序模板放大关键词
-	Data            string `json:"data"`             // 小程序模板数据
+	TemplateId      string      `json:"template_id"`      // 小程序模板ID
+	Page            string      `json:"page"`             // 小程序页面路径
+	FormId          string      `json:"form_id"`          // 小程序模板消息formid
+	EmphasisKeyword string      `json:"emphasis_keyword"` // 小程序模板放大关键词
+	Data            interface{} `json:"data"`             // 小程序模板数据
 }
 
 type MpTemplateMsg struct {
-	Appid       string `json:"appid"`       // 公众号appid，要求与小程序有绑定且同主体
-	TemplateId  string `json:"template_id"` // 公众号模板id
-	Url         string `json:"url"`         // 公众号模板消息所要跳转的url
-	Miniprogram string `json:"miniprogram"` // 公众号模板消息所要跳转的小程序，小程序的必须与公众号具有绑定关系
-	Data        string `json:"data"`        // 公众号模板消息的数据
+	Appid       string      `json:"appid"`       // 公众号appid，要求与小程序有绑定且同主体
+	TemplateId  string      `json:"template_id"` // 公众号模板id
+	Url         string      `json:"url"`         // 公众号模板消息所要跳转的url
+	Miniprogram string      `json:"miniprogram"` // 公众号模板消息所要跳转的小程序，小程序的必须与公众号具有绑定关系
+	Data        interface{} `json:"data"`        // 公众号模板消息的数据
 }
 
 // SendUniformMessage 下发小程序和公众号统一的服务消息
